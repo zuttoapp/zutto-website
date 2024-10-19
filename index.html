@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
 	</head>
 	<body class="is-preload">
 
@@ -49,70 +53,73 @@
 
 				<div class="inner">
 					<div class="logo">
-						<img src="images/zuttoapp-icon-white.png" alt="Zutto Icon" style="max-width: 100%; height: auto;" class="icon" />
+						<img src="images/zuttoapp-icon-green.png" alt="Zutto Icon" style="max-width: 100%; height: auto;" class="icon" />
 					</div>
 					<h2></h2>
 					<h3></h3>
-					<p><a href="#comingsoon" class="button primary"></a></p> 
+					<p><a href="#comingsoon" class="button primary" onmouseover="launchConfetti()"></a></p> 
 				</div>
 			</section>				
 
 			<!-- Wrapper -->
-			<section id="wrapper">
+				<!-- Adjusted "three" section for better responsiveness -->
 				<section id="three" class="wrapper spotlight style3">
-					<div class="inner">
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-						<div class="content">
-							<h2 class="major">Zutto app is your go-to local business directory,</h2>
-							<p>Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>
+					<div class="inner flex flex-col items-center justify-center py-10">
+						<div class="content text-center mt-6 px-4 md:px-0">
+							<h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-green">Zutto app is your go-to local business directory</h2>
+							<p class="text-base sm:text-lg md:text-xl mt-4">Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>
 						</div>
+						<!-- Adjusted image for responsiveness -->
+						<img src="images/zutto-splash-screenshot.png" alt="Zutto App Image" 
+							class="max-w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[425px] h-auto mx-auto p-10" />
 					</div>
 				</section>
 
 				<!-- Features Section -->
 				<div class="wrapper">
 					<div class="inner">	
-						<h2 class="major">How does it work?</h2>					
-						<section class="features">
+						<h2 class="major text-2xl font-bold mb-6">How does it work?</h2>					
+						<section class="features flex flex-wrap justify-between my-6">
 							<!-- Daily Challenges -->
-							<article class="icon-hover">
-								<div style="display: flex; align-items: center;">
-									<i class="fa-solid fa-trophy icon-hover" style="color: #16c913; margin-right: 10px;"></i> <!-- Trophy Icon -->
-									<h3 class="major">Daily Challenges</h3> <!-- Text next to the icon -->
+							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+								<div class="flex items-center mb-4">
+									<i class="fa-solid fa-trophy text-[#16c913] text-3xl mr-2"></i> <!-- Trophy Icon -->
+									<h3 class="major text-lg font-semibold">Daily Challenges</h3> <!-- Text next to the icon -->
 								</div>
-								<p>Engage with local businesses and win rewards</p>
+								<p class="text-gray-700">Engage with local businesses and win rewards</p>
 							</article>
 
 							<!-- GPS Check-ins -->
-							<article class="icon-hover">
-								<div style="display: flex; align-items: center;">
-									<i class="fa-solid fa-location-arrow icon-hover" style="color: #16c913; margin-right: 10px;"></i> <!-- GPS Icon -->
-									<h3 class="major">GPS Check-ins</h3> <!-- Text next to the icon -->
+							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+								<div class="flex items-center mb-4">
+									<i class="fa-solid fa-location-arrow text-[#16c913] text-3xl mr-2"></i> <!-- GPS Icon -->
+									<h3 class="major text-lg font-semibold">GPS Check-ins</h3> <!-- Text next to the icon -->
 								</div>
-								<p>Earn points just by showing up and exploring</p>
+								<p class="text-gray-700">Earn points just by showing up and exploring</p>
 							</article>
 
 							<!-- Redeem -->
-							<article class="icon-hover">
-								<div style="display: flex; align-items: center;">
-									<i class="fa-solid fa-gift icon-hover" style="color: #16c913; margin-right: 10px;"></i> <!-- Gift Icon -->
-									<h3 class="major">Redeem</h3> <!-- Text next to the icon -->
+							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+								<div class="flex items-center mb-4">
+									<i class="fa-solid fa-gift text-[#16c913] text-3xl mr-2"></i> <!-- Gift Icon -->
+									<h3 class="major text-lg font-semibold">Redeem</h3> <!-- Text next to the icon -->
 								</div>
-								<p>Use your points for rewards and special offers from your favorite spots</p>
+								<p class="text-gray-700">Use your points for rewards and special offers from your favorite spots</p>
 							</article>
 
-							<!-- Redeem -->
-							<article class="icon-hover">
-								<div style="display: flex; align-items: center;">
-									<i class="fa-solid fa-gift icon-hover" style="color: #16c913; margin-right: 10px;"></i> <!-- Gift Icon -->
-									<h3 class="major">Redeem</h3> <!-- Text next to the icon -->
+							<!-- Community Events -->
+							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+								<div class="flex items-center mb-4">
+									<i class="fa-solid fa-users text-[#16c913] text-3xl mr-2"></i> <!-- Community Icon -->
+									<h3 class="major text-lg font-semibold">Community Events</h3> <!-- Text next to the icon -->
 								</div>
-								<p>Use your points for rewards and special offers from your favorite spots</p>
+								<p class="text-gray-700">Join local events and connect with fellow community members</p>
 							</article>
-
 						</section>
 					</div>
 				</div>
+
+
 
 				<section id="wrapper">
 					<section id="three" class="wrapper spotlight style3">
@@ -164,6 +171,8 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+		<script src="assets/js/launchconfetti.js"></script>
 
 	</body>
 </html>

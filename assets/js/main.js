@@ -16,7 +16,7 @@
         en: {
             welcome_title: 'Gamify Your Local Experience!',
 			welcome_subtitle: 'Explore local businesses, complete challenges, and earn rewards.',
-            download: 'Download Now',
+            download: 'Coming in early 2025',
             getInTouch: 'Get in touch',
         },
         es: {
