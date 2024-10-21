@@ -7,8 +7,8 @@
 		<!-- Include Font Awesome for icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="dist/output.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 
@@ -20,12 +20,21 @@
 
 			<!-- Header -->
 			<header id="header" class="alt">
-				<h1><a href="index.html">Zutto App</a></h1>
+				<h1>
+					<a href="index.html">
+						<img src="images/zutto-logo-header.svg" alt="Zutto Logo" class="logo" />
+					</a>
+				</h1>
 				<nav>
-					<a href="#menu">Menu</a>
-					<button id="language-toggle" class="button">Español</button> <!-- Language toggle button -->
+					<div>
+						<a href="#menu">Menu</a>
+					<button id="language-toggle" class="button bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Español</button>
+					</div>
+					
 				</nav>
 			</header>
+			
+			
 
 			<!-- Menu -->
 			<nav id="menu">
@@ -47,44 +56,44 @@
 					<source src="assets/videos/15365288-hd_1920_1080_24fps (1).mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
+				<img src="assets/images/fallback-image.jpg" alt="Fallback Image" class="hidden md:block" />
+				
 			
 				<!-- Overlay Content -->
 				<div class="overlay"></div>
-
 				<div class="inner">
 					<div class="logo">
 						<img src="images/zuttoapp-icon-green.png" alt="Zutto Icon" style="max-width: 100%; height: auto;" class="icon" />
 					</div>
 					<h2></h2>
 					<h3></h3>
-					<p><a href="#comingsoon" class="button primary" onmouseover="launchConfetti()"></a></p> 
+					<p><a class="button primary" onmouseover="launchConfetti()"></a></p> 
 				</div>
 			</section>				
 
 			<!-- Wrapper -->
-				<!-- Adjusted "three" section for better responsiveness -->
-				<section id="three" class="wrapper spotlight style3">
-					<div class="inner flex flex-col items-center justify-center py-10">
-						<div class="content text-center mt-6 px-4 md:px-0">
-							<h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-green">Zutto app is your go-to local business directory</h2>
-							<p class="text-base sm:text-lg md:text-xl mt-4">Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>
+
+			<section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<div class="content">
+							<h2 class="major">Zutto app is your go-to local business directory</h2>
+							<p>Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>	
 						</div>
-						<!-- Adjusted image for responsiveness -->
 						<img src="images/zutto-splash-screenshot.png" alt="Zutto App Image" 
-							class="max-w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[425px] h-auto mx-auto p-10" />
+							class="max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[425px] h-auto mx-auto p-10" />
 					</div>
-				</section>
+			</section>
 
 				<!-- Features Section -->
 				<div class="wrapper">
-					<div class="inner">	
-						<h2 class="major text-2xl font-bold mb-6">How does it work?</h2>					
+					<div class="inner">    
+						<h2 class="major text-2xl font-bold mb-6">How does it work?</h2>                    
 						<section class="features flex flex-wrap justify-between my-6">
 							<!-- Daily Challenges -->
 							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
 								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-trophy text-[#16c913] text-3xl mr-2"></i> <!-- Trophy Icon -->
-									<h3 class="major text-lg font-semibold">Daily Challenges</h3> <!-- Text next to the icon -->
+									<i class="fa-solid fa-trophy text-[#16c913] text-3xl mr-2"></i>
+									<h3 class=" text-lg font-semibold">Daily Challenges</h3>
 								</div>
 								<p class="text-gray-700">Engage with local businesses and win rewards</p>
 							</article>
@@ -92,34 +101,32 @@
 							<!-- GPS Check-ins -->
 							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
 								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-location-arrow text-[#16c913] text-3xl mr-2"></i> <!-- GPS Icon -->
-									<h3 class="major text-lg font-semibold">GPS Check-ins</h3> <!-- Text next to the icon -->
+									<i class="fa-solid fa-location-arrow text-[#16c913] text-3xl mr-2"></i>
+									<h3 class="text-lg font-semibold">GPS Check-ins</h3>
 								</div>
 								<p class="text-gray-700">Earn points just by showing up and exploring</p>
 							</article>
 
 							<!-- Redeem -->
-							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<article class="icon-hover flex flex-col items-center bg-ZuttoGreen p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
 								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-gift text-[#16c913] text-3xl mr-2"></i> <!-- Gift Icon -->
-									<h3 class="major text-lg font-semibold">Redeem</h3> <!-- Text next to the icon -->
+									<i class="fa-solid fa-gift text-3xl mr-2"></i>
+									<h3 class="text-lg font-semibold">Redeem</h3>
 								</div>
 								<p class="text-gray-700">Use your points for rewards and special offers from your favorite spots</p>
 							</article>
 
-							<!-- Community Events -->
-							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<!-- Explore Local Businesses -->
+							<article class="icon-hover flex flex-col items-center bg-green-800 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
 								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-users text-[#16c913] text-3xl mr-2"></i> <!-- Community Icon -->
-									<h3 class="major text-lg font-semibold">Community Events</h3> <!-- Text next to the icon -->
+									<i class="fa-solid fa-store text-white text-3xl mr-2"></i>
+									<h3 class="text-lg font-semibold text-white">Explore Local Businesses</h3>
 								</div>
-								<p class="text-gray-700">Join local events and connect with fellow community members</p>
+								<p class="text-gray-300 mb-4">Discover hidden gems and support your local economy.</p> <!-- Added margin bottom -->
 							</article>
 						</section>
 					</div>
 				</div>
-
-
 
 				<section id="wrapper">
 					<section id="three" class="wrapper spotlight style3">
