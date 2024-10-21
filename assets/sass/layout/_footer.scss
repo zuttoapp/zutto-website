@@ -26,6 +26,7 @@
 
 			.contact {
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
+				margin-bottom: 15px; /* Adjust the space as needed */
 			}
 
 			.copyright {
@@ -93,6 +94,7 @@
 				.contact {
 					width: 100%;
 					margin: 0 0 (_size(element-margin) * 2) 0;
+					margin-bottom: 15px; /* Adjust the space as needed */
 				}
 
 				.copyright {
@@ -114,6 +116,7 @@
 
 				.contact {
 					margin: 0 0 (_size(element-margin) * 1.5) 0;
+					margin-bottom: 15px; /* Adjust the space as needed */
 				}
 			}
 		}

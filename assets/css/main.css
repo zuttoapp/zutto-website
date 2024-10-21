@@ -7,6 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.centered-flex {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+	flex-wrap: wrap;
+    
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -265,7 +273,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: zuttoGreen;
 		font-family: 'Nunito', sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -285,6 +293,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
+			margin-bottom: 15px; /* Adjust the space as needed */
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
@@ -2426,15 +2435,16 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0px;
 		border: 0;
 		display: inline-block;
 		position: relative;
+		border-radius: 0px !important;
 	}
 
 		.image img {
-			border-radius: 0px;
+			border-radius: 0px !important;
 			display: block;
+			flex: justify-center;
 		}
 
 		.image.left, .image.right {
@@ -2676,6 +2686,7 @@ input, select, textarea {
 	ul.contact {
 		list-style: none;
 		padding: 0;
+		margin: 3em 0 3em 0; /* Adjust the space as needed */
 	}
 
 		ul.contact li {
@@ -3077,7 +3088,7 @@ button.disabled, button:disabled,
 		height: 4em;
 		left: 0;
 		line-height: 3.5em;
-		padding: 0 1.25em;
+		padding: 0 1.25em 0 1.25em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -4052,7 +4063,7 @@ button.disabled, button:disabled,
 		@media screen and (max-width: 736px) {
 
 			.wrapper {
-				margin: 2.5em 0;
+				margin: 0;
 			}
 
 				.wrapper:before, .wrapper:after {
@@ -4094,6 +4105,7 @@ button.disabled, button:disabled,
 
 			.wrapper.spotlight .inner {
 				display: block;
+				justify-items: center;
 			}
 
 			.wrapper.spotlight .image {
@@ -4137,12 +4149,13 @@ button.disabled, button:disabled,
 		}
 
 		#footer .inner form {
-			margin: 0 3em 0 0;
+			margin: 0 3em 0 3em;
 			width: calc(50% - 1.5em);
 		}
 
 		#footer .inner .contact {
 			width: calc(50% - 1.5em);
+			
 		}
 
 		#footer .inner .copyright {
@@ -4212,7 +4225,8 @@ button.disabled, button:disabled,
 
 				#footer .inner .contact {
 					width: 100%;
-					margin: 0 0 4em 0;
+					margin: 4em 0 4em 0;
+					margin-bottom: 15px; /* Adjust the space as needed */
 				}
 
 				#footer .inner .copyright {
@@ -4237,7 +4251,7 @@ button.disabled, button:disabled,
 				}
 
 				#footer .inner .contact {
-					margin: 0 0 3em 0;
+					margin: 3em 0 3em 0;
 				}
 
 	}

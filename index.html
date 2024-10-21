@@ -22,42 +22,24 @@
 			<header id="header" class="alt">
 				<h1>
 					<a href="index.html">
-						<img src="images/zutto-logo-header.svg" alt="Zutto Logo" class="logo" />
+						<img src="images/zutto-logo-header.svg" alt="Zutto Logo" style="width: 75%;" />
 					</a>
 				</h1>
 				<nav>
 					<div>
-						<a href="#menu">Menu</a>
-					<button id="language-toggle" class="button bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Español</button>
+						<!-- <button id="language-toggle" class="button" style="margin-right: 10px;">Español</button> -->
 					</div>
 					
 				</nav>
 			</header>
-			
-			
-
-			<!-- Menu -->
-			<nav id="menu">
-				<div class="inner">
-					<h2>Menu</h2>
-					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-					<a href="#" class="close">Close</a>
-				</div>
-			</nav>
 
 			<!-- Banner -->
-			<section id="banner">
+			<section class="centered-flex" id="banner">
 				<!-- Background Video -->
 				<video autoplay muted loop playsinline id="background-video">
 					<source src="assets/videos/15365288-hd_1920_1080_24fps (1).mp4" type="video/mp4">
 					Your browser does not support the video tag.
-				</video>
-				<img src="assets/images/fallback-image.jpg" alt="Fallback Image" class="hidden md:block" />
-				
+				</video>			
 			
 				<!-- Overlay Content -->
 				<div class="overlay"></div>
@@ -66,8 +48,7 @@
 						<img src="images/zuttoapp-icon-green.png" alt="Zutto Icon" style="max-width: 100%; height: auto;" class="icon" />
 					</div>
 					<h2></h2>
-					<h3></h3>
-					<p><a class="button primary" onmouseover="launchConfetti()"></a></p> 
+					<p><a class="button primary" style="margin-top: 1em;" onmouseover="launchConfetti()"></a></p> 
 				</div>
 			</section>				
 
@@ -76,98 +57,88 @@
 			<section id="three" class="wrapper spotlight style3">
 					<div class="inner">
 						<div class="content">
-							<h2 class="major">Zutto app is your go-to local business directory</h2>
-							<p>Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>	
+							<h2 class="major" style="font-size: 30px; font-weight: bold; color: #16c913;">Zutto app is your go-to local business directory</h2>
+							<p style="margin-left: 1em;">Designed to connect you with hidden gems across Puerto Rico. With gamified challenges and rewards, Zutto makes exploring your local favorites even more fun.</p>	
 						</div>
-						<img src="images/zutto-splash-screenshot.png" alt="Zutto App Image" 
-							class="max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[425px] h-auto mx-auto p-10" />
+						<div class="image">
+							<img class="block !mx-auto sm:!float-left" src="images/zutto-splash-screenshot.png" alt="Image description">
+						</div>												
 					</div>
 			</section>
 
-				<!-- Features Section -->
-				<div class="wrapper">
-					<div class="inner">    
-						<h2 class="major text-2xl font-bold mb-6">How does it work?</h2>                    
-						<section class="features flex flex-wrap justify-between my-6">
-							<!-- Daily Challenges -->
-							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-trophy text-[#16c913] text-3xl mr-2"></i>
-									<h3 class=" text-lg font-semibold">Daily Challenges</h3>
-								</div>
-								<p class="text-gray-700">Engage with local businesses and win rewards</p>
-							</article>
-
-							<!-- GPS Check-ins -->
-							<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-location-arrow text-[#16c913] text-3xl mr-2"></i>
-									<h3 class="text-lg font-semibold">GPS Check-ins</h3>
-								</div>
-								<p class="text-gray-700">Earn points just by showing up and exploring</p>
-							</article>
-
-							<!-- Redeem -->
-							<article class="icon-hover flex flex-col items-center bg-ZuttoGreen p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-gift text-3xl mr-2"></i>
-									<h3 class="text-lg font-semibold">Redeem</h3>
-								</div>
-								<p class="text-gray-700">Use your points for rewards and special offers from your favorite spots</p>
-							</article>
-
-							<!-- Explore Local Businesses -->
-							<article class="icon-hover flex flex-col items-center bg-green-800 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
-								<div class="flex items-center mb-4">
-									<i class="fa-solid fa-store text-white text-3xl mr-2"></i>
-									<h3 class="text-lg font-semibold text-white">Explore Local Businesses</h3>
-								</div>
-								<p class="text-gray-300 mb-4">Discover hidden gems and support your local economy.</p> <!-- Added margin bottom -->
-							</article>
-						</section>
-					</div>
-				</div>
-
-				<section id="wrapper">
-					<section id="three" class="wrapper spotlight style3">
-						<div class="inner">
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-							<div class="content">
-								<h2 class="major">About the Founder</h2>
-								<p>Hey there! I'm Justin, the founder of Zutto app. I'm passionate about connecting local businesses with their communities and creating a more vibrant Puerto Rico. Let's explore our beutiful island together!</p>
+			<div class="wrapper">
+				<div class="inner">    
+					<h2 class="major text-2xl font-bold mb-6" id="how-it-works-title">How does it work?</h2>                    
+					<section class="features flex flex-wrap justify-between my-6">
+						<!-- Daily Challenges -->
+						<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<div class="flex items-center mb-4">
+								<i class="fa-solid fa-trophy" style="color: #16c913"></i>
+								<h3 >Daily Challenges</h3>
 							</div>
-						</div>
+							<p class="text-gray-700" style="margin-bottom: 10px;">Engage with local businesses and win rewards</p>
+						</article>
+			
+						<!-- GPS Check-ins -->
+						<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<div class="flex items-center mb-4">
+								<i class="fa-solid fa-location-arrow" style="color: #16c913"></i>
+								<h3 class="text-lg font-semibold">GPS Check-ins</h3>
+							</div>
+							<p class="text-gray-700" style="margin-bottom: 10px;">Earn points just by showing up and exploring</p>
+						</article>
+			
+						<!-- Redeem -->
+						<article class="icon-hover flex flex-col items-center bg-ZuttoGreen p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<div class="flex items-center mb-4">
+								<i class="fa-solid fa-gift text-3xl mr-2" style="color: #16c913"></i>
+								<h3 class="text-lg font-semibold">Redeem</h3>
+							</div>
+							<p class="text-gray-700" style="margin-bottom: 10px;">Use your points for rewards and special offers from your favorite spots</p>
+						</article>
+			
+						<!-- Explore Local Businesses -->
+						<article class="icon-hover flex flex-col items-center bg-gray-100 p-6 m-2 rounded-lg shadow-md transition-transform transform hover:scale-105">
+							<div class="flex items-center mb-4">
+								<i class="fa-solid fa-store" style="color: #16c913"></i>
+								<h3 class="text-lg font-semibold">Explore Local Businesses</h3>
+							</div>
+							<p class="text-gray-700" style="margin-bottom: 10px;">Discover hidden gems and support your local economy.</p>
+						</article>
 					</section>
+				</div>
+			</div>
+			
 
 			<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
-					<h2 class="major">Get in touch</h2>
-					<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-					<form id="subscription-form">
-						<div class="fields">
-							<div class="field">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" />
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" /></li>
-							<li><input type="submit" value="Subscribe" /></li>
-						</ul>
-					</form>
-					
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a href="#">info@zuttoapp.com</a></li>
-						<li class="icon brands fa-twitter"><a href="#">twitter.com/zuttoapp</a></li>
-						<li class="icon brands fa-facebook-f"><a href="#">facebook.com/zuttoapp</a></li>
-						<li class="icon brands fa-instagram"><a href="#">instagram.com/zuttoapp</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; 2024 Zutto App, All rights reserved.</li>
-					</ul>
+				  <h2 class="major">Have questions or want to learn more about Zutto?</h2>
+				  <p>We'd love to hear from you! Whether you're a business looking to connect or a user ready to explore, we're just a message away.</p>
+			  
+				  <!-- Contact List -->
+				  <ul class="contact">
+					<li class="icon solid fa-envelope">
+					  <a href="mailto:zuttoapp@gmail.com">zuttoapp@gmail.com</a>
+					</li>
+					<li class="icon brands fa-twitter">
+					  <a href="https://x.com/zuttoapp" target="_blank">x.com/zuttoapp</a>
+					</li>
+					<li class="icon brands fa-tiktok">
+					  <a href="https://www.tiktok.com/@zuttoapp" target="_blank">tiktok.com/zuttoapp</a>
+					</li>
+					<li class="icon brands fa-instagram">
+					  <a href="https://www.instagram.com/zuttoapp" target="_blank">instagram.com/zuttoapp</a>
+					</li>
+				  </ul>
+			  
+				  <!-- Copyright -->
+				  <ul class="copyright">
+					<li>&copy; 2024 Zutto App, All rights reserved.</li>
+				  </ul>
 				</div>
-			</section>
+			  </section>
+			  
 
 		</div>
 

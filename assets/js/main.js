@@ -15,15 +15,34 @@
     const translations = {
         en: {
             welcome_title: 'Gamify Your Local Experience!',
-			welcome_subtitle: 'Explore local businesses, complete challenges, and earn rewards.',
+            welcome_subtitle: 'Explore local businesses, complete challenges, and earn rewards.',
             download: 'Coming in early 2025',
-            getInTouch: 'Get in touch',
+            getInTouch: 'Have questions or want to learn more about Zutto?',
+            how_it_works_title: 'How does it work?',
+            daily_challenges_title: 'Daily Challenges',
+            daily_challenges_description: 'Engage with local businesses and win rewards',
+            gps_checkins_title: 'GPS Check-ins',
+            gps_checkins_description: 'Earn points just by showing up and exploring',
+            redeem_title: 'Redeem',
+            redeem_description: 'Use your points for rewards and special offers from your favorite spots',
+            explore_title: 'Explore Local Businesses',
+            explore_description: 'Discover hidden gems and support your local economy.'
         },
         es: {
             welcome_title: '¡Gamifica Tu Experiencia Local!',
-			welcome_subtitle: 'Explora negocios locales, completa desafíos y gana recompensas. ¡Descubre Puerto Rico como nunca antes!',
+            welcome_subtitle: 'Explora negocios locales, completa desafíos y gana recompensas. ¡Descubre Puerto Rico como nunca antes!',
             download: 'Descargar Ahora',
             getInTouch: 'Ponte en contacto',
+            how_it_works_title: '¿Cómo funciona?',
+            how_it_word_subtitle:'Diseñado para conectarte con gemas ocultas en todo Puerto Rico. Con desafíos y recompensas gamificados, Zutto hace que explorar tus favoritos locales sea aún más divertido.',
+            daily_challenges_title: 'Desafíos Diarios',
+            daily_challenges_description: 'Interactúa con negocios locales y gana recompensas',
+            gps_checkins_title: 'Check-ins GPS',
+            gps_checkins_description: 'Gana puntos solo por aparecer y explorar',
+            redeem_title: 'Canjear',
+            redeem_description: 'Usa tus puntos para recompensas y ofertas especiales de tus lugares favoritos',
+            explore_title: 'Explora Negocios Locales',
+            explore_description: 'Descubre joyas ocultas y apoya a tu economía local.'
         }
     };
 
@@ -33,10 +52,26 @@
     function updateContent() {
         // Update the banner text
         $('#banner .inner h2').text(translations[currentLanguage].welcome_title);
-		// $('#banner .inner h2').text(translations[currentLanguage].welcome_subtitle);
+        $('#banner .inner h3').text(translations[currentLanguage].welcome_subtitle); // Update subtitle
         $('#banner .inner .button.primary').text(translations[currentLanguage].download);
         $('#footer .inner h2').text(translations[currentLanguage].getInTouch);
         $('#language-toggle').text(currentLanguage === 'en' ? 'Español' : 'English');
+
+        // Update "How does it work?" section
+        $('#three .inner h2').text(translations[currentLanguage].how_it_works_title);
+
+        // Update feature articles
+        $('#three .inner article:nth-child(1) h3').text(translations[currentLanguage].daily_challenges_title);
+        $('#three .inner article:nth-child(1) p').text(translations[currentLanguage].daily_challenges_description);
+
+        $('#three .inner article:nth-child(2) h3').text(translations[currentLanguage].gps_checkins_title);
+        $('#three .inner article:nth-child(2) p').text(translations[currentLanguage].gps_checkins_description);
+
+        $('#three .inner article:nth-child(3) h3').text(translations[currentLanguage].redeem_title);
+        $('#three .inner article:nth-child(3) p').text(translations[currentLanguage].redeem_description);
+
+        $('#three .inner article:nth-child(4) h3').text(translations[currentLanguage].explore_title);
+        $('#three .inner article:nth-child(4) p').text(translations[currentLanguage].explore_description);
     }
 
     // Event listener for language toggle button
